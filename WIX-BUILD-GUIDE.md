@@ -1,12 +1,12 @@
 # Rebuilding this design in the Wix Classic Editor
 
-Everything on the site is made of: **full-width strips**, a **980 px content column** (Wix Classic default site width), **boxes**, **text**, **buttons**, **images**, **icons** and **1 px lines**. Nothing else.
+Everything on the site is made of: **full-width strips**, a **1140 px content column** (centred inside full-width strips; 980 px felt cramped), **boxes**, **text**, **buttons**, **images**, **icons** and **1 px lines**. Nothing else.
 
 ## 1. Site setup
 | Setting | Value |
 |---|---|
 | Site colours | Navy `#0B2540` · Dark navy `#071A2E` · Cyan `#22B8D1` · Light `#F2F6F8` · Text `#14283C` · White |
-| Heading font | **Playfair Display**, bold |
+| Heading font | **Playfair Display**, bold (use lining numerals if the font offers them) |
 | Body font | **Open Sans**, regular / bold |
 | Sizes (desktop) | H1 52 · H2 38 · H3 22 · body 16 · small 14 · eyebrow 13 (bold, caps, letter-spacing 2) |
 | Sizes (mobile) | H1 38 · H2 30 |
@@ -16,14 +16,14 @@ Everything on the site is made of: **full-width strips**, a **980 px content col
 | Animation | Only "Fade in" (or "Float in" 16 px) on entrance, once |
 | Header | Pinned (fixed), white, 84 px, 1 px bottom line. Logo left, horizontal menu, "Demander un devis" button on the right |
 
-Section spacing: **80 px top and bottom** on every strip (56 px on mobile). Every strip: content aligned to the 980 px grid.
+Section spacing: **96 px top and bottom** on every strip (64 px on mobile). Space between a section heading and its content: 64 px. Every strip: content aligned to the same 1140 px column. Column gap 40 px.
 
 ## 2. Home page — strips in order
 | # | Strip | Background | Layout / content |
 |---|---|---|---|
 | 1 | Hero | Photo `hero-bg.webp` + navy overlay 74 % | Left-aligned, 640 px wide: eyebrow, H1 (last line cyan), paragraph 19 px, 2 buttons, 2 tick items. Strip height ≈ 620 px |
 | 2 | Trust bar | Cyan | 4 columns: icon + bold line + small line (navy text) |
-| 3 | Formations | White | Centred eyebrow + H2, then **4 × 2 boxes**: icon in light-cyan circle, small caps duration, H3 20, text 15, "En savoir plus" link. Outline button below |
+| 3 | Formations | White | Centred eyebrow + H2, then **2 columns × 4 rows of wide boxes**: icon in light-cyan circle on the left; on the right small-caps duration, H3 22, text 16, "En savoir plus" link. Outline button below |
 | 4 | Formation phare (SST) | Navy | 2 columns: image left · right = tag, eyebrow, H2, text, 4-cell fact table (thin white lines), 2 buttons |
 | 5 | Pourquoi FormUp JC | Light | Centred heading, **3 × 2** text blocks: 3 px top line (cyan), number, H3, text |
 | 6 | À propos | White | 2 columns: square portrait left · quote (cyan left bar), 2 paragraphs, outline button |
