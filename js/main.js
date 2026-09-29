@@ -6,21 +6,13 @@
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* Sticky header: border + shadow once the page is scrolled */
-  function initHeader() {
-    const header = $(".site-header");
-    if (!header) return;
-    const update = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-  }
 
   /* Mobile menu */
   function initMenu() {
     const toggle = $(".menu-toggle");
     const nav = $("#site-nav");
     if (!toggle || !nav) return;
-    const mq = window.matchMedia("(min-width: 64em)");
+    const mq = window.matchMedia("(min-width: 901px)");
 
     const setOpen = (open) => {
       toggle.setAttribute("aria-expanded", String(open));
@@ -58,34 +50,7 @@
     items.forEach((el) => io.observe(el));
   }
 
-  /* Back to top */
-  function initToTop() {
-    const btn = $(".to-top");
-    if (!btn) return;
-    const update = () => btn.classList.toggle("is-visible", window.scrollY > 900);
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }));
-  }
 
-  /* Testimonials carousel: native scroll-snap + prev/next buttons */
-  function initReviews() {
-    const track = $("[data-reviews]");
-    if (!track) return;
-    const prev = $("[data-reviews-prev]");
-    const next = $("[data-reviews-next]");
-    const step = () => (track.firstElementChild?.getBoundingClientRect().width || 300) + 24;
-    const sync = () => {
-      const max = track.scrollWidth - track.clientWidth - 2;
-      if (prev) prev.disabled = track.scrollLeft <= 2;
-      if (next) next.disabled = track.scrollLeft >= max;
-    };
-    prev?.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: reduceMotion ? "auto" : "smooth" }));
-    next?.addEventListener("click", () => track.scrollBy({ left: step(), behavior: reduceMotion ? "auto" : "smooth" }));
-    track.addEventListener("scroll", sync, { passive: true });
-    window.addEventListener("resize", sync);
-    sync();
-  }
 
   /* Contact form: client-side validation.
      Delivery: if the form has data-endpoint, POST there (Formspree, Netlify, custom API…).
@@ -165,7 +130,7 @@
   }
 
   document.documentElement.classList.add("js");
-  const start = () => { initHeader(); initMenu(); initReveal(); initToTop(); initReviews(); initForms(); };
+  const start = () => { initMenu(); initReveal(); initForms(); };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
   else start();
 })();

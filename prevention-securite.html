@@ -17,113 +17,77 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="favicon.png">
-<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playfairdisplay.woff2" as="font" type="font/woff2" crossorigin>
 <script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1z"/><path d="M7 12h2.5l1.5-3 2 6 1.5-3H17"/></symbol><symbol id="i-kit" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M12 11v5M9.5 13.5h5"/></symbol><symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 .5 1.5 1 2 2 2 0-3-1-5 1-8z"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z M14 3v4h4M9.5 12h5M9.5 16h5"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.5 0 4.5 2 4.5 4.5"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol><symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 21l5-3 5 3-1.5-6.5"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol><symbol id="i-id" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.5-1.5 1.7-2 3-2s2.5.5 3 2M15 10h3M15 14h3"/></symbol></defs></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1z"/><path d="M7 12h2.5l1.5-3 2 6 1.5-3H17"/></symbol><symbol id="i-kit" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M12 11v5M9.5 13.5h5"/></symbol><symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 .5 1.5 1 2 2 2 0-3-1-5 1-8z"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z M14 3v4h4M9.5 12h5M9.5 16h5"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.5 0 4.5 2 4.5 4.5"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol><symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 21l5-3 5 3-1.5-6.5"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol><symbol id="i-id" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.5-1.5 1.7-2 3-2s2.5.5 3 2M15 10h3M15 14h3"/></symbol></defs></svg>
 <a class="skip-link" href="#main">Aller au contenu</a>
 <header class="site-header">
-  <div class="container site-header__inner">
-    <a class="brand" href="index.html" aria-label="FormUp JC — accueil">
-      <img src="assets/images/logo.webp" alt="FormUp JC" width="225" height="180">
-      <span class="brand__tag">La formation<br>est votre avenir</span>
-    </a>
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html" aria-label="FormUp JC — accueil"><img src="assets/images/logo.webp" alt="FormUp JC" width="225" height="180"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     <nav class="nav" id="site-nav" aria-label="Navigation principale">
       <ul class="nav__list"><li><a class="nav__link" href="index.html">Accueil</a></li><li><a class="nav__link" href="formations.html">Formations</a></li><li><a class="nav__link" href="prevention-securite.html" aria-current="page">Prévention &amp; Sécurité</a></li><li><a class="nav__link" href="a-propos.html">À propos</a></li><li><a class="nav__link" href="avis.html">Avis</a></li><li><a class="nav__link" href="contact.html">Contact</a></li></ul>
-      <a class="btn btn--primary btn--sm nav__cta" href="contact.html#devis">Demander un devis</a>
+      <a class="btn btn--primary btn--sm" href="contact.html#devis">Demander un devis</a>
     </nav>
   </div>
 </header>
 <main id="main">
-
-<section class="page-hero"><div class="container">
-  <nav aria-label="Fil d’Ariane"><ol class="breadcrumb"><li><a href="index.html">Accueil</a></li><li aria-current="page">Prévention &amp; Sécurité</li></ol></nav>
-  <p class="eyebrow">Prévention &amp; sécurité</p>
-  <h1>Prévention des risques professionnels</h1>
-  <p>Consulting et formation en santé et sécurité au travail : une approche opérationnelle, conforme à la réglementation et adaptée au terrain, pour tous types d’entreprises.</p>
-</div></section>
-
-<section class="section"><div class="container split">
-  <div class="reveal"><img src="assets/images/atelier-formation.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Formateur présentant devant un groupe de salariés attentifs lors d’une session de sensibilisation"></div>
-  <div class="reveal" style="--delay:.1s">
-    <p class="eyebrow">Notre approche</p>
-    <h2>Prévenir vaut toujours mieux que guérir</h2>
-    <p class="lead" style="margin-block:var(--sp-4)">Un environnement de travail plus sûr protège les personnes autant que la performance.</p>
+<section class="strip strip--navy page-hero"><div class="wrap"><nav aria-label="Fil d’Ariane"><ol class="breadcrumb"><li><a href="index.html">Accueil</a></li><li aria-current="page">Prévention &amp; Sécurité</li></ol></nav><p class="eyebrow">Prévention &amp; sécurité</p><h1>Prévention des risques professionnels</h1><p>Consulting et formation en santé et sécurité au travail : une approche opérationnelle, conforme à la réglementation et adaptée au terrain, pour tous types d’entreprises.</p></div></section>
+<section class="strip"><div class="wrap cols cols-2 cols--center cols--wide">
+  <img class="photo photo--43 reveal" src="assets/images/atelier-formation.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Formateur présentant devant un groupe de salariés attentifs lors d’une session de sensibilisation">
+  <div class="reveal"><p class="eyebrow">Notre approche</p><h2>Prévenir vaut toujours mieux que guérir</h2>
+    <p class="lead" style="margin-block:16px">Un environnement de travail plus sûr protège les personnes autant que la performance.</p>
     <p>FormUp JC accompagne les entreprises dans la prévention des risques professionnels, notamment des troubles musculo-squelettiques (TMS), la gestion des accidents de travail et le secourisme (SST). Les formations proposées sont concrètes, accessibles et immédiatement applicables.</p>
-    <a class="link-arrow" href="formations.html">Consulter les formations <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
-  </div>
+    <a class="btn btn--outline" href="formations.html">Consulter les formations <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
 </div></section>
 
-<section class="section section--surface" aria-labelledby="th-title"><div class="container">
-  <div class="section-head reveal"><p class="eyebrow">Domaines d’intervention</p><h2 id="th-title">Ce que nous faisons pour votre entreprise</h2></div>
-  <ul class="topic-list" style="border-bottom:1px solid var(--color-border)"><li class="topic reveal"><h3>Troubles musculo-squelettiques (TMS)</h3><p>Repérer les situations de travail à risque, comprendre leurs causes et mettre en place des actions concrètes, dont des sensibilisations à la manutention et au port de charges.</p></li><li class="topic reveal"><h3>Accidents du travail</h3><p>Gestion des accidents du travail et analyse par la méthode de l’arbre des causes, pour comprendre les coûts directs et indirects et éviter qu’ils se reproduisent.</p></li><li class="topic reveal"><h3>Document Unique (DUERP)</h3><p>Réalisation du Document Unique d’évaluation des risques professionnels et du plan d’action associé, en conseil ou par la formation d’un référent interne.</p></li><li class="topic reveal"><h3>Secourisme et gestes qui sauvent</h3><p>Formations SST, recyclage et sensibilisation pour que vos équipes sachent réagir face à une urgence.</p></li><li class="topic reveal"><h3>Prévention incendie</h3><p>Connaître les risques incendie de l’entreprise et savoir utiliser un extincteur, avec possibilité d’un module en e-learning.</p></li><li class="topic reveal"><h3>Sensibilisations sur mesure</h3><p>Port des équipements de protection individuelle, manutention, Safety Day : des actions construites à la demande de l’entreprise.</p></li></ul>
+<section class="strip strip--light" aria-labelledby="th-title"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow">Domaines d’intervention</p><h2 id="th-title">Ce que nous faisons pour votre entreprise</h2></div>
+  <ul><li class="topic reveal"><h3>Troubles musculo-squelettiques (TMS)</h3><p>Repérer les situations de travail à risque, comprendre leurs causes et mettre en place des actions concrètes, dont des sensibilisations à la manutention et au port de charges.</p></li><li class="topic reveal"><h3>Accidents du travail</h3><p>Gestion des accidents du travail et analyse par la méthode de l’arbre des causes, pour comprendre les coûts directs et indirects et éviter qu’ils se reproduisent.</p></li><li class="topic reveal"><h3>Document Unique (DUERP)</h3><p>Réalisation du Document Unique d’évaluation des risques professionnels et du plan d’action associé, en conseil ou par la formation d’un référent interne.</p></li><li class="topic reveal"><h3>Secourisme et gestes qui sauvent</h3><p>Formations SST, recyclage et sensibilisation pour que vos équipes sachent réagir face à une urgence.</p></li><li class="topic reveal"><h3>Prévention incendie</h3><p>Connaître les risques incendie de l’entreprise et savoir utiliser un extincteur, avec possibilité d’un module en e-learning.</p></li><li class="topic reveal"><h3>Sensibilisations sur mesure</h3><p>Port des équipements de protection individuelle, manutention, Safety Day : des actions construites à la demande de l’entreprise.</p></li></ul>
 </div></section>
 
-<section class="section"><div class="container split split--reverse">
-  <div class="reveal"><img src="assets/images/prevention-equipe.webp" width="1000" height="666" loading="lazy" decoding="async" alt="Deux salariés portant casque et masque de protection dans un environnement industriel"></div>
-  <div class="reveal" style="--delay:.1s">
-    <p class="eyebrow">Safety Day</p>
-    <h2>Faites de la sécurité un jeu</h2>
-    <p class="lead" style="margin-block:var(--sp-4)">Une journée de sensibilisation ludique qui associe prévention et team building.</p>
+<section class="strip strip--navy"><div class="wrap cols cols-2 cols--center cols--wide">
+  <div class="reveal"><p class="eyebrow">Safety Day</p><h2 style="margin-bottom:16px">Faites de la sécurité un jeu</h2>
+    <p class="lead">Une journée de sensibilisation ludique qui associe prévention et team building.</p>
     <p>Le Safety Day s’adapte aux horaires et à l’organisation de votre entreprise. Il peut être complété par des sensibilisations au port des équipements de protection individuelle et à la manutention.</p>
-    <a class="btn btn--outline" href="contact.html?formation=sur-mesure#devis">Décrire mon besoin <svg class="icon icon--sm icon--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
-  </div>
+    <a class="btn btn--primary" href="contact.html?formation=sur-mesure#devis">Décrire mon besoin <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+  <img class="photo photo--43 reveal" src="assets/images/prevention-equipe.webp" width="1000" height="666" loading="lazy" decoding="async" alt="Deux salariés portant casque et masque de protection dans un environnement industriel">
 </div></section>
 
-<section class="cta-band section" aria-labelledby="cta-title">
-  <div class="container cta-band__inner">
-    <div class="reveal"><h2 id="cta-title">Besoin d’une formation adaptée à votre entreprise ?</h2><p>Parlons de vos équipes, de vos risques et de vos contraintes. Nous vous répondons avec une proposition claire, adaptée à votre activité.</p></div>
-    <div class="btn-row reveal" style="--delay:.1s">
-      <a class="btn btn--primary" href="contact.html#devis">Demander un devis <svg class="icon icon--sm icon--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
-      <a class="btn btn--outline" href="contact.html">Nous contacter</a>
-    </div>
-  </div>
-</section>
+<section class="strip strip--cyan cta" aria-labelledby="cta-title"><div class="wrap cols cols-2 cols--center reveal">
+  <div><h2 id="cta-title">Besoin d’une formation adaptée à votre entreprise ?</h2><p>Parlons de vos équipes, de vos risques et de vos contraintes. Nous vous répondons avec une proposition claire, adaptée à votre activité.</p></div>
+  <div class="btn-row" style="justify-content:flex-end"><a class="btn btn--primary" href="contact.html#devis">Demander un devis <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a><a class="btn btn--outline" href="contact.html">Nous contacter</a></div>
+</div></section>
 
 </main>
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
+  <div class="wrap">
+    <div class="cols footer-cols">
       <div class="footer-brand">
         <img src="assets/images/logo.webp" alt="FormUp JC" width="225" height="180" loading="lazy">
         <p>Consulting et formation en santé et sécurité au travail. Plus de 12 ans d’expérience en prévention des risques professionnels, pour tous types d’entreprises et tous secteurs.</p>
       </div>
-      <div>
-        <h2>Navigation</h2>
-        <ul class="footer-list"><li><a href="index.html">Accueil</a></li><li><a href="formations.html">Formations</a></li><li><a href="prevention-securite.html">Prévention &amp; Sécurité</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="avis.html">Avis</a></li><li><a href="contact.html">Contact</a></li></ul>
-      </div>
-      <div>
-        <h2>Formations</h2>
-        <ul class="footer-list">
-          <li><a href="formations.html#sst">Formation SST</a></li>
-          <li><a href="formations.html#recyclage-sst">Recyclage SST</a></li>
-          <li><a href="formations.html#gestes-qui-sauvent">Gestes qui sauvent</a></li>
-          <li><a href="formations.html#referent-prevention">Référent prévention &amp; DUERP</a></li>
-          <li><a href="formations.html#incendie">Prévention incendie</a></li>
-          <li><a href="formations.html#accidents-travail">Analyse des accidents</a></li>
-          <li><a href="formations.html#sur-mesure">Formations sur mesure</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <ul class="footer-list footer-contact">
-          <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><a href="mailto:formupjc@gmail.com">formupjc@gmail.com</a></li>
-          <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>Interventions partout en France</span></li>
-          <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-id"/></svg><span>SIRET : 109 117 655 00018</span></li>
-        </ul>
-      </div>
+      <div><h2>Navigation</h2><ul class="footer-list"><li><a href="index.html">Accueil</a></li><li><a href="formations.html">Formations</a></li><li><a href="prevention-securite.html">Prévention &amp; Sécurité</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="avis.html">Avis</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h2>Formations</h2><ul class="footer-list">
+        <li><a href="formations.html#sst">Formation SST</a></li>
+        <li><a href="formations.html#recyclage-sst">Recyclage SST</a></li>
+        <li><a href="formations.html#gestes-qui-sauvent">Gestes qui sauvent</a></li>
+        <li><a href="formations.html#referent-prevention">Référent prévention &amp; DUERP</a></li>
+        <li><a href="formations.html#incendie">Prévention incendie</a></li>
+        <li><a href="formations.html#accidents-travail">Analyse des accidents</a></li>
+        <li><a href="formations.html#sur-mesure">Formations sur mesure</a></li></ul></div>
+      <div><h2>Contact</h2><ul class="footer-list footer-contact">
+        <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><a href="mailto:formupjc@gmail.com">formupjc@gmail.com</a></li>
+        <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>Interventions partout en France</span></li>
+        <li><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-id"/></svg><span>SIRET : 109 117 655 00018</span></li></ul></div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 FormUp JC. Tous droits réservés.</span>
-      <span>Prévenir. Former. Protéger.</span>
-    </div>
+    <div class="footer-bottom"><span>© 2026 FormUp JC. Tous droits réservés.</span><span>Prévenir. Former. Protéger.</span></div>
   </div>
 </footer>
-<button class="to-top" type="button" aria-label="Retour en haut de page"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></button>
 <script src="js/main.js" defer></script>
 </body>
 </html>
